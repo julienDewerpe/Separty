@@ -33,7 +33,8 @@
             android:background="@android:color/transparent"
             android:hint="Username"
             android:padding="10dp"
-            android:textColorHint="@android:color/white" />
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -45,7 +46,8 @@
             android:hint="Password"
             android:padding="10dp"
             android:textColorHint="@android:color/white"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -57,10 +59,11 @@
             android:hint="Confirm Password"
             android:padding="10dp"
             android:textColorHint="@android:color/white"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"/>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/signUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -87,7 +90,8 @@
             android:layout_gravity="center_horizontal"
             android:text="Login"
             android:textColor="@android:color/white"
-            android:background="@android:color/transparent"/>
+            android:background="@android:color/transparent"
+            android:id="@+id/login"/>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

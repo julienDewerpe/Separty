@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Separty</string>
     <string name="separty">SEPARTY</string>
+    <string name="winrate">Winrate</string>
 </resources>
