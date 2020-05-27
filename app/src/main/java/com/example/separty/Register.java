@@ -10,26 +10,30 @@ import android.widget.Button;
 /**
  * created by separty team on <Date du jour>
  **/
-public class inscriptionActivity extends AppCompatActivity{
+public class Register extends AppCompatActivity{
+     /*
+    TODO
+        Button SignUp a faire comme le Button Login mais avec un traitement
+     */
 
     private Button login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.inscription);
+        setContentView(R.layout.activity_register);
 
         login = findViewById(R.id.login);
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openMainActivity();
+                openLogin();
             }
         });
     }
 
-    public void openMainActivity(){
-        Intent intent = new Intent(this, MainActivity.class);
+    public void openLogin(){
+        Intent intent = new Intent(this, Login.class);
         startActivity(intent);
     }
 }

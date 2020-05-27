@@ -7,27 +7,26 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class Profile extends AppCompatActivity {
 
-    private Button signUp;
+    private Button logOut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_profile);
 
-        signUp = findViewById(R.id.signUp);
-        signUp.setOnClickListener(new View.OnClickListener() {
+        logOut = findViewById(R.id.logOut);
+        logOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    openInscriptionActivity();
+                openLogin();
             }
         });
     }
 
-    public void openInscriptionActivity(){
-        Intent intent = new Intent(this, inscriptionActivity.class);
+    public void openLogin(){
+        Intent intent = new Intent(this, Login.class);
         startActivity(intent);
     }
-
 }
