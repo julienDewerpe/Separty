@@ -43,6 +43,7 @@
                     android:layout_gravity="center"
                     android:text="username"
                     android:textStyle="bold"
+                    android:textColor="@android:color/white"
                     />
 
                 <ImageView
