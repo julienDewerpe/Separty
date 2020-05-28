@@ -62,9 +62,8 @@ public class Register extends AppCompatActivity{
     public void openLoginWithSignUp(){
         if (isValidPassword(password.getText().toString().trim())) {
             Toast.makeText(Register.this, "Valid", Toast.LENGTH_SHORT).show();
-            if (isSamePassword(password.getText().toString().trim(), confPass.getText().toString().trim())){
-                Intent intent = new Intent(this, Login.class);
-                startActivity(intent);
+            if (isSamePassword()){
+                Toast.makeText(Register.this, "Owoooooooooooo", Toast.LENGTH_SHORT).show();
             }
         } else {
             Toast.makeText(Register.this, "InValid password", Toast.LENGTH_SHORT).show();
@@ -83,7 +82,7 @@ public class Register extends AppCompatActivity{
         return matcher.matches();
     }
 
-    public boolean isSamePassword(String password, String confPass){
+    public boolean isSamePassword(){
         return password.equals(confPass);
     }
 
