@@ -24,8 +24,8 @@ public class Register extends AppCompatActivity{
 
     private Button login;
     private Button signUp;
-    private EditText password = (EditText) findViewById(R.id.password);;
-    private EditText confPass = (EditText) findViewById(R.id.confPass);;
+    private EditText password;;
+    private EditText confPass;;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,9 @@ public class Register extends AppCompatActivity{
         setContentView(R.layout.activity_register);
 
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+
+        password = (EditText) findViewById(R.id.password);
+        confPass = (EditText) findViewById(R.id.confPass);
 
         login = findViewById(R.id.login);
         login.setOnClickListener(new View.OnClickListener() {
