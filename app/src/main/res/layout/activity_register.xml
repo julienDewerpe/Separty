@@ -46,7 +46,8 @@
             android:textColorHint="@android:color/white"
             android:textColor="@android:color/white"
             android:focusable="true"
-            android:focusableInTouchMode="true"/>
+            android:focusableInTouchMode="true"
+            android:inputType="textAutoCorrect"/>
 
         <EditText
             android:layout_width="match_parent"
