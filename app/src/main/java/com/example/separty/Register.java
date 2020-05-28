@@ -65,6 +65,9 @@ public class Register extends AppCompatActivity{
             if (isSamePassword()){
                 Toast.makeText(Register.this, "Owoooooooooooo", Toast.LENGTH_SHORT).show();
             }
+            else{
+                Toast.makeText(Register.this, "iwiiiiiiiiiiiiii", Toast.LENGTH_SHORT).show();
+            }
         } else {
             Toast.makeText(Register.this, "InValid password", Toast.LENGTH_SHORT).show();
         }
