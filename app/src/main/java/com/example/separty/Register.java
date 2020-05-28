@@ -86,6 +86,8 @@ public class Register extends AppCompatActivity{
     }
 
     public boolean isSamePassword(){
+        Toast.makeText(Register.this, (CharSequence) password, Toast.LENGTH_SHORT).show();
+        Toast.makeText(Register.this, (CharSequence) confPass, Toast.LENGTH_SHORT).show();
         return password.equals(confPass);
     }
 
