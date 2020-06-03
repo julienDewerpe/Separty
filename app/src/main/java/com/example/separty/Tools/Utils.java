@@ -8,27 +8,19 @@ import java.security.NoSuchAlgorithmException;
  **/
 public class Utils {
 
-    public static String md5(final String s) {
-        final String MD5 = "MD5";
+    public static String sha(final String s) {
+        MessageDigest md = null;
         try {
-            // Create MD5 Hash
-            MessageDigest digest = java.security.MessageDigest.getInstance(MD5);
-            digest.update(s.getBytes());
-            byte messageDigest[] = digest.digest();
-
-            // Create Hex String
-            StringBuilder hexString = new StringBuilder();
-            for (byte aMessageDigest : messageDigest) {
-                String h = Integer.toHexString(0xFF & aMessageDigest);
-                while (h.length() < 2)
-                    h = "0" + h;
-                hexString.append(h);
+            md = MessageDigest.getInstance("SHA-512");
+            byte[] digest = md.digest(s.getBytes());
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < digest.length; i++) {
+                sb.append(Integer.toString((digest[i] & 0xff) + 0x100, 16).substring(1));
             }
-            return hexString.toString();
-
+            return sb.toString();
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
-        return "";
+        return null;
     }
 }
