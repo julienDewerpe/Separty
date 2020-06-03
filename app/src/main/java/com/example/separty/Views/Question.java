@@ -1,10 +1,12 @@
-package com.example.separty;
+package com.example.separty.Views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class activity_question extends AppCompatActivity {
+import com.example.separty.R;
+
+public class Question extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

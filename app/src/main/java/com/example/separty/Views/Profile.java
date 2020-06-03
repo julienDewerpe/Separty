@@ -1,4 +1,4 @@
-package com.example.separty;
+package com.example.separty.Views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.separty.R;
+import com.example.separty.Views.Login;
 
 public class Profile extends AppCompatActivity {
 

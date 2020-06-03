@@ -16,9 +16,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-
-
-
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
@@ -35,6 +32,7 @@
             android:textColor="@android:color/white"/>
 
         <EditText
+            android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -80,6 +78,18 @@
             android:textColor="@android:color/white"
             android:focusable="true"
             android:focusableInTouchMode="true"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please choose a password that has at least 6 charcaters, one capital letter, one lowercase letter, one symbol and one digit."
+            android:textColor="@android:color/white"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            />
 
         <Button
             android:id="@+id/signUp"
